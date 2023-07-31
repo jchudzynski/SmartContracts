@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyToken is ERC20, Ownable {
     uint256 public constant BURN_RATE = 10; // 0.1% represented as 10 (10/10000)
 
-    constructor() ERC20("My Token", "MTK") {
+    constructor() ERC20("", "MTK") {
         uint256 initialSupply = 69420000 * (10 ** decimals());
         _mint(msg.sender, initialSupply);
     }
